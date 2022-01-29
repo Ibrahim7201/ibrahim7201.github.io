@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <link rel="stylesheet" href="3.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="first">
+            <label>How Many Books?</label><input type="number" name="" id="num" placeholder="Enter Books No."><button
+                id="ok" onclick="Enter()">OK</button>
+        </div>
+        <div id="second">
+            <label id="l1">Book's Name</label><br>
+            <input placeholder="Enter book's name.." type="text" name="" id="name" onchange="vname(this)"><br><br>
+            <label id="l2">Price</label><br>
+            <input placeholder="Enter book's price.." type="number" name="" id="price"><br><br>
+            <label id="l3">Author Name</label><br>
+            <input placeholder="Enter author's name.." type="text" name="" id="authorname"
+                onchange="vname(this)"><br><br>
+            <label id="l4">Author E-mail</label><br>
+            <input placeholder="Enter author's email.." type="email" name="" id="email"
+                onchange="vmail(this)"><br><br><br>
+            <button id="create" onclick="Create()">Create</button>
+
+
+        </div>
+        <div id="t">
+            <table>
+                <thead>
+                    <th>Name</th>
+                    <th>Publish Date</th>
+                    <th>Price</th>
+                    <th>Author's Name</th>
+                    <th>Author's E-mail</th>
+                    <th></th>
+                    <th></th>
+                </thead>
+                <tbody id="data">
+                    <tr></tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="3.js"></script>
+</body>
+
+</html>
